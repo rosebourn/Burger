@@ -1,47 +1,55 @@
 <div class="header">
-<h1>Eat-Da-Burger</h1>
+  <h1>Eat-Da-Burger</h1>
 </div>
 <div class="grid-container">
-<div class="main">
-<h2>Burgers To Eat</h2>
+  <div class="main">
+    <h2>Burgers To Eat</h2>
 
 
-<ul class="to-eat-list">
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
-</div>
+    <ul class="to-eat-list">
+      {{#each burgers}}
+      {{#unless devoured}}
+      <li>
+        {{burger_name}}
 
-<div class="right">
-<div class="eaten">
-<h2>Devoured</h2>
+        <button class="change-to-eaten" data-id="{{id}}">
+          Eat-Da-Burger
+        </button>
+      </li>
+      {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/if}}
-  {{/each}}
-</ul>
-</div>
-</div>
+  <div class="right">
+    <div class="eaten">
+      <h2>Devoured</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        <li>
+        {{burger_name}}
+      </li>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
 </div>
 
 <div class="footer">
-<h2 class="add">Add a Burger</h2>
-<form class="create-form">
+  <h2 class="add">Add a Burger</h2>
+  <form class="create-form">
 
-  <div class="form-group">
-    <label for="br"></label>
-    <input type="text" id="br" name="name">
+    <div class="form-group">
+      <label for="br"></label>
+      <input type="text" id="br" name="name">
 
-  <button class="add-button" type="submit">Submit</button>
+      <button class="add-button" type="submit">Submit</button>
+    </div>
 </div>
-</div>
 
-<img src="../../../public/assets/img/10610529.jpg" alt="Yummy Burger">
+<img src="./assets/img/10610529.jpg" alt="Yummy Burger">
 
 </form>

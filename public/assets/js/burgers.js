@@ -1,18 +1,17 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
-// Make into devoured button to move to right side of page
 $(function() {
-    $(".to-eat").on("click", function(event) {
+    $(".change-to-eaten").on("click", function(event) {
       var id = $(this).data("id");
-      var newToEat = $(this).data("newtoeat");
+      var newEaten = $(this).data("neweaten");
   
-      var newToEatAdd = {
-        devoured: newToEat
+      var newEatenAdd = {
+        devoured: newEaten
       };
   
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newToEatAdd
+        data: newEatenAdd
       }).then(
         function() {
           // console.log("changed devoured to", newToEat);
