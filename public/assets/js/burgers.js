@@ -15,7 +15,7 @@ $(function() {
         data: newToEatAdd
       }).then(
         function() {
-          console.log("changed devoured to", newToEat);
+          // console.log("changed devoured to", newToEat);
           // Reload the page to get the updated list
           location.reload();
         }
