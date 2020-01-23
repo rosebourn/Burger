@@ -3,10 +3,12 @@ li {
     margin: 5px;
     background: #f7f6f2;
     list-style-type: none;
+    font-size: 18px;
   }
 
   .header {
     text-align: center;
+    font-size: 22px;
   }
 
   .add {
@@ -29,6 +31,7 @@ li {
 
   h2 {
     text-align: center;
+    font-size: 25px;
   }
 
   .grid-container {
@@ -50,7 +53,46 @@ li {
     margin-bottom: 5px;
   }
 
+  .change-to-eaten {
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    float: right;
+    font-size: 16px;
+  }
+
+  .change-to-eaten:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .change-to-eaten:focus {
+    outline: none;
+  }
+
+  .add-button {
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  .add-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .add-button:focus {
+    outline: none;
+  }
+
   body {
     background-color: rgb(241, 179, 64);
     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  input {
+    width: 250px;
+    height: 22px;
   }
