@@ -16,4 +16,4 @@ Add the burger name to input box at the bottom of the page and then click the "S
 - ORM
 - Heroku
 
-![](images/screenShot.png)
+![](img/screenShot.png)
